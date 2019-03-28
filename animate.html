@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>animate</title>
+  <style>
+    body {
+      background-color: #bdcfed;
+    }
+
+    .fred {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      background-color: red;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+
+    .george {
+      height: 400px;
+      width: 400px;
+      margin-left: 200px;
+      background-image: url("wormz.png");
+      animation-name: movie;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+      background-position: center top;
+    }
+
+    .kota {
+      height: 150px;
+      width: 150px;
+      background-image: url("dog.gif");
+      margin-left:300px;
+      animation-name: less;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+    }
+
+
+    @keyframes movie {
+      0% {
+        background-image: url("wormz.png");
+      }
+
+      25% {
+        background-image: url("full-bloom.png");
+      }
+
+      50% {
+        background-image: url("gnome.png");
+      }
+
+      100% {
+        background-image: url("ht@1x.png");
+      }
+    }
+
+
+    @keyframes example {
+      0% {
+        background-color: red;
+      }
+
+      25% {
+        background-color: yellow;
+        transform: scale(1.5);
+      }
+
+      50% {
+        background-color: blue;
+      }
+
+      100% {
+        background-color: green;
+        border-radius: 50%;
+      }
+    }
+
+    @keyframes less{
+      0% {transform: scale(.5)
+
+      }
+
+      25% {
+        transform: scale(1.5);
+      }
+
+      50% {box-shadow: 5px 19px 40px #ff856d
+
+      }
+
+      100% {
+
+        border-radius: 50%;
+      }
+      }
+  </style>
+</head>
+
+<body>
+  <div class="george"></div>
+  <div class="fred"> </div>
+    <div class="kota"></div>
+
+
+</body>
+
+</html>
