@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>transforms page</title>
+  <style>
+    body {
+      background-color: #9560b2;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: #efc099;
+      margin: 1rem;
+    }
+
+    #box1 {
+      transition: transform .5s;
+      background-color: #e5c0c5
+    }
+
+    #box1:hover {
+      transform: rotate(45deg);
+      border-radius: 20%;
+      background-color: #c0e5c7
+    }
+
+    #box2 {
+      transition: transform 1s linear;
+      background-color: #c0c6e5
+    }
+
+    #box2:hover {
+      transform: scale(.5);
+      border-radius: 40%;
+      background-color: #dadb97
+    }
+
+    #box3 {
+      background-color: #c0e5c7
+    }
+
+    #box3:hover {
+      transform: rotate(60deg);
+      background-color: #c7e8e4;
+      height: 70px;
+      width: 200px;
+      border: 5px solid #f2dad5
+    }
+
+    #box4 {  background-color: #dadb97
+    }
+
+    #box4:hover {
+      background-color: #ffcd70;
+      box-shadow: 5px 19px 40px #ff856d;
+      border-radius: 30%
+    }
+
+    #box5 {transition: 2s linear
+      background-color: #c7e8e4
+    }
+
+    #box5:hover {
+      transform: translate(30px);
+      background-color: #ff70ae;
+      border: 3px dotted white
+    }
+
+    #box6 {
+      background-color: #ffcd70
+    }
+
+    #box6:hover {
+      background-color: #fafc92;
+      padding: 30px;
+      border: 12px solid #22471f;
+      border-left: 12px solid #4a7c47;
+      border-right: 12px solid #042102;
+      border-radius: 50px;}
+
+    #box7 {
+      background-color: #ff70ae}
+
+    #box7:hover {
+      background-color: #e5c0c5;
+      border-top: 3px dashed white;
+      border-left: 3px dashed black;
+      border-right: 3px dashed black;
+      border-bottom: 3px dashed white;
+      box-shadow:29px 29px 40px #ece3ef
+    }
+
+
+    #box8 {transition: transform 2s linear; background-color: #fafc92
+    }
+
+    #box8:hover {transform: scale(2);background-color: #c0c6e5; border: 10px solid #d9ccdd}
+  </style>
+</head>
+
+<body>
+  <div id="box1"> </div>
+  <div id="box2"> </div>
+  <div id="box3"> </div>
+  <div id="box4"> </div>
+  <div id="box5"> </div>
+  <div id="box6"> </div>
+  <div id="box7"> </div>
+  <div id="box8"> </div>
+</body>
+
+</html>
