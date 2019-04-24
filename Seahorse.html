@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Seahorse Serenity</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    main {
+      width: 80%;
+      margin: 0 auto;
+      background: #b1d8c9;}
+  img{float:right;}
+  nav{width:20%;
+  background:#c8e1f4;
+  float:left;}
+
+article{width:80%;
+  background:#efbfc0;
+float:left}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;}
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class=clearfix>
+      <h1>Seahorse Serenity</h1>
+      <img src="Mr_baldwin_character.png" alt="Cool Seahrose photo">
+    </header>
+
+    <div id="content" class=clearfix>
+    <nav class=clearfix><h2>Navigation</h2></nav>
+    <article><h2>Content</h2></article>
+    </div>
+
+    <footer class=clearfix><h2>footer links</h2>
+      <p>copyright stuff</p>
+    </footer>
+
+  </main>
+</body>
+
+</html>
