@@ -4,9 +4,55 @@
 <head>
   <meta charset="utf-8">
   <title>Sponge Bob Chart</title>
+  <style>
+    body {
+      background-color: #dda6b5;
+      background-image: url("wormz.png"), linear-gradient(45deg, #aafff2, #b260ff);
+      ;
+      background-blend-mode: multiply;
+      background-attachment: fixed;
+      color: white;
+      font-family: Cousine;
+    }
 
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      border: 1px solid black;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background: #eff49f;
+      color: #a4d1fc
+    }
+
+    tbody {
+      background: #edbbcb;
+      color: #499b65
+    }
+
+    tr:nth-child(even) {
+      background: #ed8bbf
+    }
+
+    td:hover {
+      background: #b1b8dd
+    }
+
+    td,
+    th {
+      border: 3px solid black
+    }
+  </style>
 </head>
 <h1>Spongebob Stats</h1>
+
 <body>
   <table>
     <thead>
