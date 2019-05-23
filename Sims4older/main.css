@@ -1,17 +1,26 @@
 body {
-  background-color: #bdcfed;
-  background-image: url("sakura copy.png");
+  background-color: #dda6b5;
+  background-image: url("sakura copy.png"), linear-gradient(45deg, #fffb99, #ffb7c3);
+  ;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
   color: #f282a6;
+  font-family: monospace;
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
 }
-.span-col-3{grid-column: span 3 / auto;}
 
-.span-col-2{grid-column: span 2 / auto;}
+.span-col-3 {
+  grid-column: span 3 / auto;
+}
+
+.span-col-2 {
+  grid-column: span 2 / auto;
+}
 
 .box1 {
   width: 500px;
@@ -22,7 +31,23 @@ body {
   margin-right: auto;
   text-align: center;
   border-radius: 50px;
-  font-size: 50px;}
-.paragraph {color: #823649; font-size: 20px; text-indent:30px }
-footer {background: #ffced8}
-nav {background: #ffced8}
+  font-size: 50px;
+  color: #ffc1d5;
+}
+
+.paragraph {
+  color: #823649;
+  font-size: 20px;
+  text-indent: 30px
+}
+
+footer {
+  background: #fc97af;
+  font-size: 15px; color: #7c2574
+}
+
+nav {
+  background: #fc97af;
+  color: #7c2574;
+  font-size: 20px
+}
